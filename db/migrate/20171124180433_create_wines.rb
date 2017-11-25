@@ -1,6 +1,6 @@
 class CreateWines < ActiveRecord::Migration[5.1]
   def change
-    create_table do |t|
+    create_table :wines do |t|
       t.string :name
 
       t.timestamps
