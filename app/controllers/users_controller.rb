@@ -3,11 +3,11 @@ get "/users/new" do
 end
 
 post "/users" do
-  @user = User.new(params[:user])
-  if @user.save
-    session[:id] = @user.id
-  else
-    @errors = @user.errors.full_messages
+  # @user = User.new(params[:user])
+  # if @user.save
+  #   session[:id] = @user.id
+  # else
+  #   @errors = @user.errors.full_messages
   erb :'users/show'
-  end
+  # end
 end
