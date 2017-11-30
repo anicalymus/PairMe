@@ -1,4 +1,4 @@
 class MeatDish < ActiveRecord::Base
   # Remember to create a migration!
-  has_many: wines
+  has_many :wines
 end
