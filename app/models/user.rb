@@ -2,7 +2,7 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   # Remember to create a migration!
-  has_many: saved_pairings
+  has_many :saved_pairings
 
   validates :username, :email, presence: true
 
